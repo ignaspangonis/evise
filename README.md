@@ -1,2 +1,2 @@
 # Evise
-Early Stages of Evise Page
+Early stages of Evise page
