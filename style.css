@@ -1,0 +1,260 @@
+* {
+	font-family: 'Playfair Display', serif;
+}
+ 
+body {
+	/*background-image: url(black.jpg);
+	background-size: cover;*/
+	height: 100%;
+	background-color: #434300;
+
+  	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+a {
+	color: rgb(139, 139, 0);
+	text-decoration: none;
+	/* display: block; */
+}
+a:hover, a:before {
+	text-decoration: none;
+	color: rgb(139, 139, 0);
+}
+
+nav ul {
+  padding: 0px;
+  margin: 0 auto;
+  vertical-align:top;
+  width: 50%;
+  list-style: none;
+  
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+nav > ul a { /* arba nav > ul > li */
+	/* display: inline-block; */
+	/* height: 70px; */
+	text-align: center;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	vertical-align: middle;
+	line-height: 90px;
+	transition: all 0.4s ease 0s;
+	width: 100%;
+}
+
+nav > ul a:hover { /* arba nav > ul > li */
+	background-color: rgba(35, 35, 0, 0.5);
+	color: rgba(200, 200, 200, 1);
+}
+nav > ul a:active li {
+	color: rgb(200, 200, 200);
+}
+nav > ul li {
+	font-style: Bold 700;
+}
+/* #selected a {
+	color: rgb(200, 200, 0);
+} */
+
+
+h1 {
+	/*border: 3px solid rgba(35, 35, 0, 0.5);
+	border-radius: 10px;*/
+	width: 228px;
+	height: 38px;
+	padding: 5px;
+	cursor: pointer;
+	text-align: left;
+}
+h2, h3 {
+	color: #C9C900;
+	text-align: center;
+	/*border: 3px solid rgba(35, 35, 0, 0.5);
+	border-radius: 10px;*/
+	width: 200px;
+	padding: 5px;
+	cursor: pointer;
+}
+h3 {
+	color: #A0A000;
+	width: 150px;
+}
+h1:hover, h2:hover, h3:hover {
+	background-color: rgba(35, 35, 0, 0.5);
+	color: #808000;
+}
+p {
+	color:  #8B8B0B;
+	/*line-height: 20px;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 80%;*/
+}
+footer {
+	overflow: hidden;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+footer img {
+	width: 1900px;
+	height: auto;
+	opacity: 0.07;
+}
+
+.headerBig {
+	position: fixed;
+	border: 2px solid rgba(35, 35, 0, 0.5);
+	top: 40%;
+	left: 35%;
+	width: 30%;
+	font-size: 50px;
+	transition: all 0.5s ease 0s;
+	/*  vertical-align:top;*/
+}
+.headerBig:hover {
+	/*pasikeicia teskstas i "Know About Me" or smth*/
+	transform: scale(1.13);
+}
+/*.headerBig:hover:after {
+	content: "!";
+}
+*/
+.headerNormal {
+	border: 2px solid rgba(35, 35, 0, 0.5);
+	width: 140px;
+}
+h2.headerNormal {
+	cursor: default;
+}
+.headerSmall {
+	border: 2px solid rgba(35, 35, 0, 0.5);
+	width: 110px;
+	margin: 0 0 20px 30px;
+}
+
+.pictureContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.pictureContainer img {
+	width: auto;
+	height: 400px;
+	margin: 10px;
+	transition: all 1s;
+}
+.pictureContainer img:hover {
+	transform: scale(1.13);
+}
+
+.track {
+	background-color: rgba(154, 154, 0, 0.15);
+	width: 60%;
+	min-height: 185px;
+	padding: 5px;
+	text-align: right;
+	transition: all 0.3s ease 0s;
+	margin: 20px 0 20px 30px;
+}
+.track:first-of-type {
+	border-top-right-radius: 20px;
+}
+.track:last-of-type {
+	border-bottom-right-radius: 20px;
+}
+.track:hover {
+	background-color: rgba(154, 154, 0, 0.22);
+}
+.track a:hover {
+	color: #808070;
+}
+.track img {
+	filter: grayscale(100%);
+	margin: 0px 10px 0px 0px;
+}
+.track:hover img {
+	filter: grayscale(0%);
+}
+#divLogo {
+	/* display: inline; */
+	position: absolute;
+	margin-left: 80px;
+}
+/* #divLogo:hover {
+	background-color: rgba(35, 35, 0, 0.5);
+} */
+#divLogo img {
+	width: 120px;
+	margin: 20px; 
+	cursor: pointer;
+}
+
+
+
+
+.jumbotron, .jumbotron-fluid {
+	padding: 5em inherit;
+}
+
+.btn {
+	font-weight: 700;
+	border-radius: 300px;
+}
+.btn-collab {
+	padding: 1rem 2rem;
+}
+.btn-light {
+	background-color: #c4c411;
+	border-color: #c4c411;
+	transition: all 0.4s ease 0s;
+	text-transform: uppercase;
+}
+.btn-light:hover {
+	background-color: #646409;
+	border-color: #646409;
+	border-width: 6px;
+}
+hr {
+	border-color: #8B8B0B;
+	border-width: 4px;
+	max-width: 65px;
+}
+.buffer {
+	height: 10rem;
+}
+.collab-image {
+	width: 60%;
+	/* height: 25rem; */
+	/* margin: 10% 40% 10% 0; */
+	bottom: 5%;
+	left: 80px; 
+	margin-top: 7%;
+	position: relative;
+	/* margin-left: auto;
+	  margin-right: auto; */
+	  overflow:hidden;
+}
+.collab-header {
+	font-size: 2.7rem;
+	color: #C9C900;
+	position: absolute; 
+	bottom: 5%;
+	left: 64%; 
+	top: 42%;
+	width: 35%; 
+	text-align: center;
+}
+
+.collab-image img {
+	width:100%;
+	opacity: 75%;
+	object-fit: none;
+}
